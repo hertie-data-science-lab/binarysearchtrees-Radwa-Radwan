@@ -7,10 +7,12 @@ class TreeNode:
 def insert(root, TreeNode):
     if root is None:
         root = TreeNode
-    elif TreeNode.value < root.value:
-        root.left = insert(root.left, TreeNode)
+    elif root.left is None:
+        root.left = TreeNode
+    elif root.right is None:
+        root.right = TreeNode
     else:
-        root.right = insert(root.right, TreeNode)
+        insert(root.left, TreeNode)
     return root
 
 def create_binary_tree(values):
@@ -19,7 +21,6 @@ def create_binary_tree(values):
         new_node = TreeNode(value)
         root = insert(root, new_node)
     return root
-
 
 
 
