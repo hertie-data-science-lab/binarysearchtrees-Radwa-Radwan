@@ -1,0 +1,22 @@
+## Binary Tree 
+
+TreeNode class has two functions to create and insert nodes into a binary tree.
+
+The TreeNode class has three attributes: left, right, and value. The left and right attributes are initialized as None and represent the left and right children nodes of a tree. 
+
+The insert function takes two arguments, the root of the tree and the node to be inserted. It inserts a new node into the tree by recursively traversing the tree and finding the first available position.
+
+
+##Binary Search Tree
+
+Class BinarySearchT initialize values in the form of a list. 
+
+The insert method takes integer, creating a new TreeNode object. It inserts the value in the tree according to the binary search tree unique property. If the value is less than the current node's value, it is inserted in the left subtree. If the value is greater than the current node, it is inserted in the right subtree.
+
+The convert_to_bst method converts the binary search tree into a binary tree by sorting the values of the tree in increasing order and then constructing a new binary tree using the sorted values. It returns the root node of the newly constructed binary tree.
+
+The get_values method takes a TreeNode object and a list of integers, it recursively traverses the tree in-order, appending the values of the nodes to the list in increasing order.
+
+The create_bst method takes a list of integers, a start index and an end index, and constructs a binary tree recursively by selecting the middle value in the list as the root node. It creates the left and right subtrees using the left and right halves of the list, respectively.
+
+The print_in_order method takes a TreeNode object and recursively prints the values of the nodes in the tree in increasing order.
